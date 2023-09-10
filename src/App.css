@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+    width: 34rem;
+    height: 27rem;
+    background-color: powderblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 1rem 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+    margin-bottom: 20px;
+    font-style: italic;
 }
 
-.App-link {
-  color: #61dafb;
+label{
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+    border: none;
+    margin-top: 10px;
+    border-bottom: 3px solid white;
+    background-color: transparent;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    color: black;
+}
+
+button{
+    width: 6rem;
+    height: 2rem;
+    background-color: white;
+    color: rgb(46, 191, 210);
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.resetbtn{
+    width: 8rem;
+    height: 2rem;
+}
+
+#resetInput{
+    margin-bottom: 1rem;
+}
+
+#resetLabel{
+    margin-top: 10px;
+}
+
+button:hover{
+    color: white;
+    background-color: rgb(46, 191, 210);
+}
+
+.resetlink{
+    width: 30rem;
+    height: 25rem;
+    background-color: powderblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+p{
+    margin: 10px 0px;
+}
+
+#updateBtn{
+    width: 8rem;
+    height: 2rem;
+}
+
+span{
+    margin-top: 10px;
+}
+
+#profile{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon{
+    width: 100%;
+    height: 100%;
 }
